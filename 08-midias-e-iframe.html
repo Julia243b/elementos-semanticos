@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias e iframe</title>
+</head>
+
+<body>
+    <!-- iframe = Inline Frame. Esse recurso é bastante utilizado para incorporar recursos internos e externos no nosso documento HTML -->
+
+    <!-- colocar um video no site -->
+
+    <!-- Exemplo de recurso externo, no caso, um video do youtube -->
+
+   <iframe width="560" 
+   height="315" 
+   src="https://www.youtube.com/embed/uSpS2KXynwI?si=6oK9MuV-kpLofIwX" 
+   title="letra da musica do saja boys meu pequeno guarana" 
+   frameborder="0" 
+   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+   <!-- frameborder = tamanho da borda -->
+
+   <!-- Exemplo de conteudo interno -->
+    <iframe src="03-listas.html" title="Página html com recursos sobre listas" frameborder="0" width="560" height="300">
+        <p>Seu navegador não suporta Iframes.</p>
+    </iframe>
+
+
+    <!-- mapa = seleciona incomporar um mapa no site -->
+
+    <!-- link do mapa aqui no iframe src -->
+    
+    <!-- title - para usuario com baixa visão de tela, tem que colocar sempre num link porque o title é como uma conteudo sensivel de tela para pessoas sensiveis a tela, basicamente o title vai ler o que esta escristo nele como se fosse uma descrição do video, ou mapa.-->
+
+    <h2>Carregando conteudo externo - Mapas</h2>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233997.86488761334!2d-46.84435417187502!3d-23.59656226152788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59bb3fd735c9%3A0x5dc2e403c7746b41!2sEmp%C3%B3rio%20Daruma!5e0!3m2!1spt-BR!2sbr!4v1753841343422!5m2!1spt-BR!2sbr" title="Loja japonesa Daruma" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <hr>
+    
+    <h2>Carregando conteudo interno</h2>
+
+<ul>
+    <li><a href="huntrix.jpg" target="galeria">Huntrix</a></li>
+
+    <li><a href="group-saja-boys.jpg" target="galeria">Saja Boys</a></li>
+</ul>
+
+
+    <iframe name="galeria" src="group-saja-boys.jpg" frameborder="0" width="880" height="500"></iframe>
+    
+
+    
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens</title>
+</head>
+
+<body>
+
+    <h2>Trabalhando com imagens</h2>
+
+        <!-- src (fonte da imagem) alt (texto alternativo) -->
+        
+         <!-- 
+            src = source (fonte, origem do arquivo).
+            alt = alternative (arternativo). O alt serve para a acessibilidade pois quando a imagem não é carregada , o navegador busca esse texto alternativo, que serve como uma descrição da imagem. Quando mais detalhes esse texto alternativo possuir, melhor a acessibilidade e experiência do usuário.
+         -->
+
+    <img src="group-saja-boys.jpg" alt="grupo de kpop demon do saja boys" height="300">
+
+        <!-- 
+            É possivel controlar a altura e a largura da imagem pelo HTML
+            height (altura) = representa a altura da imagem
+            width (largura) = representa a largura/comprimento da imagem 
+        -->
+
+        <!-- É possível utilizar imagens externas -->
+
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8necuITatEDnGWNbRXwLHCZqGayqk8UJ5nw&s"
+        alt="Menbros do grupo de kpop demon chamado saja boys" width="535" height="300">
+
+        <hr>
+
+        <figure>
+            <img src="group-saja-boys.jpg" alt="grupo de kpop do saja boys">
+            <figcaption>Membros do grupo de kpop demon - Saja Boys</figcaption>
+        </figure>
+
+
+        <picture>
+            <source srcset="group-saja-boys.jpg" type="=image/jpg">
+            <source srcset="group-saja-boys.png" type="image/png">
+            <source srcset="group-saja-boys.jpeg" type="image.jpeg">
+
+            <!-- fallback = imagem padrão caso as imagens anteriores falham ou não sejam suportadas -->
+            <img src="huntrix.jpg" alt="grupo de kpop huntrix">
+        </picture>
+</body>
+</html>
